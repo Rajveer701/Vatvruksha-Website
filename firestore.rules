@@ -1,0 +1,63 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------- Helper functions ----------
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function isAdmin() {
+      return isSignedIn()
+        && request.auth.token.admin == true
+        && request.auth.token.email_verified == true;
+    }
+
+    // ---------- Users (profiles) ----------
+    match /users/{userId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId);
+      allow delete: if false;
+    }
+
+    // ---------- Addresses ----------
+    match /users/{userId}/addresses/{addressId} {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId);
+      allow delete: if isOwner(userId);
+    }
+
+    // ---------- Products (public read; admin write) ----------
+    match /products/{productId} {
+      allow read: if true;
+      allow create: if isAdmin();
+      allow update: if isAdmin();
+      allow delete: if false; // never hard-delete; set isActive=false
+    }
+
+    // ---------- Categories (public read; admin write) ----------
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow create: if isAdmin();
+      allow update: if isAdmin();
+      allow delete: if false; // never hard-delete; set isActive=false
+    }
+
+    // ---------- Orders ----------
+    // Customers can only READ their own orders (owner filter required by rules).
+    // Writes happen only via callable Cloud Functions (createCodOrder, createPaytmOrder),
+    // never directly from the browser.
+    match /orders/{orderId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if false; // backend-owned via callable
+      allow update: if false; // backend-owned via callable
+      allow delete: if false;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Public read for product/category images (resolved via getDownloadURL).
+    match /products/{productId}/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // uploads handled out of scope; admin write pending rules confirmation
+    }
+    match /categories/{categoryId}/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    // No other paths accessible.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

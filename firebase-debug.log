@@ -1,0 +1,375 @@
+[debug] [2026-10-18T05:56:53.867Z] ----------------------------------------------------------------------
+[debug] [2026-10-18T05:56:53.868Z] Command:       /opt/homebrew/Cellar/node/26.7.0/bin/node /Users/rajveer/Desktop/Vatvruksha Website/node_modules/.bin/firebase emulators:start --only auth,firestore,storage --project demo-project
+[debug] [2026-10-18T05:56:53.869Z] CLI Version:   15.34.0
+[debug] [2026-10-18T05:56:53.869Z] Platform:      darwin
+[debug] [2026-10-18T05:56:53.869Z] Node Version:  v26.7.0
+[debug] [2026-10-18T05:56:53.869Z] Detected Agent: opencode
+[debug] [2026-10-18T05:56:53.869Z] Time:          Sun Oct 18 2026 11:26:53 GMT+0530 (India Standard Time)
+[debug] [2026-10-18T05:56:53.869Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-18T05:56:54.433Z] java version "26.0.1" 2026-04-21
+
+[debug] [2026-10-18T05:56:54.433Z] Java(TM) SE Runtime Environment (build 26.0.1+8-34)
+Java HotSpot(TM) 64-Bit Server VM (build 26.0.1+8-34, mixed mode, sharing)
+
+[debug] [2026-10-18T05:56:54.438Z] Parsed Java major version: 26
+[info] i  emulators: Starting emulators: auth, firestore, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, firestore, storage"}}
+[info] i  emulators: Detected demo project ID "demo-project", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-project\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[debug] [2026-10-18T05:56:54.756Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-18T05:56:54.756Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-18T05:56:54.756Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-18T05:56:54.756Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-18T05:56:54.756Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-10-18T05:56:54.756Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-10-18T05:56:54.757Z] Write emulator hub locator at /var/folders/7w/5q7pxcz54p3_wz7_lmgfx36m0000gn/T/hub-demo-project.json
+[info] i  firestore: downloading cloud-firestore-emulator-v1.22.0.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.22.0.jar..."}}
+[debug] [2026-10-18T05:56:54.767Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.22.0.jar 
+[debug] [2026-10-18T05:56:55.325Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.22.0.jar 200
+[debug] [2026-10-18T05:56:55.326Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.22.0.jar [stream]
+[debug] [2026-10-18T05:57:40.715Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2026-10-18T05:57:40.715Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2026-10-18T05:57:40.715Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/rajveer/.cache/firebase/emulators/cloud-firestore-emulator-v1.22.0.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--database-edition","standard","--project_id","demo-project","--rules","/Users/rajveer/Desktop/Vatvruksha Website/firestore.rules","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","database-edition","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/rajveer/.cache/firebase/emulators/cloud-firestore-emulator-v1.22.0.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--database-edition\",\"standard\",\"--project_id\",\"demo-project\",\"--rules\",\"/Users/rajveer/Desktop/Vatvruksha Website/firestore.rules\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"database-edition\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to firestore-debug.log"}}
+[debug] [2026-10-18T05:57:40.955Z] WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/Users/rajveer/.cache/firebase/emulators/cloud-firestore-emulator-v1.22.0.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+ {"metadata":{"emulator":{"name":"firestore"},"message":"WARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/Users/rajveer/.cache/firebase/emulators/cloud-firestore-emulator-v1.22.0.jar)\nWARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2\nWARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release\n"}}
+[debug] [2026-10-18T05:57:41.251Z] Oct 18, 2026 11:27:41 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:27:41 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2026-10-18T05:57:41.260Z] 
+API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"\nAPI endpoint: http://"}}
+[debug] [2026-10-18T05:57:41.260Z] 127.0.0.1:8080
+Database Edition: STANDARD
+Database Mode: CLOUD_FIRESTORE
+
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nDatabase Edition: STANDARD\nDatabase Mode: CLOUD_FIRESTORE\n\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator was started in standard edition. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator was started in standard edition."}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.1.3.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.1.3.jar..."}}
+[debug] [2026-10-18T05:57:43.067Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 
+[debug] [2026-10-18T05:57:43.557Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 200
+[debug] [2026-10-18T05:57:43.557Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar [stream]
+[debug] [2026-10-18T05:58:00.915Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[warn] ⚠  Unexpected rules runtime error: WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::arrayBaseOffset has been called by com.google.protobuf.UnsafeUtil$MemoryAccessor (file:/Users/rajveer/.cache/firebase/emulators/cloud-storage-rules-runtime-v1.1.3.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.protobuf.UnsafeUtil$MemoryAccessor
+WARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release
+ {"metadata":{"emulator":{"name":"storage"},"message":"Unexpected rules runtime error: WARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::arrayBaseOffset has been called by com.google.protobuf.UnsafeUtil$MemoryAccessor (file:/Users/rajveer/.cache/firebase/emulators/cloud-storage-rules-runtime-v1.1.3.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.protobuf.UnsafeUtil$MemoryAccessor\nWARNING: sun.misc.Unsafe::arrayBaseOffset will be removed in a future release\n"}}
+[debug] [2026-10-18T05:58:01.200Z] Temp file directory for storage emulator: /var/folders/7w/5q7pxcz54p3_wz7_lmgfx36m0000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/7w/5q7pxcz54p3_wz7_lmgfx36m0000gn/T/firebase/storage/blobs"}}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2026-10-18T05:58:01.204Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2026-10-18T05:58:01.506Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2026-10-18T05:58:01.506Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2026-10-18T05:58:02.564Z] Data is 3538469
+[debug] [2026-10-18T05:58:02.564Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-10-18T05:58:02.564Z] [unzip] Processing entry: client/
+[debug] [2026-10-18T05:58:02.564Z] [unzip] mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/
+[debug] [2026-10-18T05:58:02.565Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2026-10-18T05:58:02.565Z] [unzip] Processing entry: client/favicon-16x16.png
+[debug] [2026-10-18T05:58:02.565Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.565Z] [unzip] Writing file: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/favicon-16x16.png
+[debug] [2026-10-18T05:58:02.565Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2026-10-18T05:58:02.565Z] [unzip] Processing entry: client/safari-pinned-tab.svg
+[debug] [2026-10-18T05:58:02.565Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.565Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/safari-pinned-tab.svg
+[debug] [2026-10-18T05:58:02.567Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2026-10-18T05:58:02.567Z] [unzip] Processing entry: client/favicon.ico
+[debug] [2026-10-18T05:58:02.567Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.568Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/favicon.ico
+[debug] [2026-10-18T05:58:02.568Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2026-10-18T05:58:02.568Z] [unzip] Processing entry: client/index.html
+[debug] [2026-10-18T05:58:02.568Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.568Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/index.html
+[debug] [2026-10-18T05:58:02.569Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2026-10-18T05:58:02.569Z] [unzip] Processing entry: client/android-chrome-192x192.png
+[debug] [2026-10-18T05:58:02.569Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.569Z] [unzip] Writing file: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-192x192.png
+[debug] [2026-10-18T05:58:02.569Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2026-10-18T05:58:02.569Z] [unzip] Processing entry: client/apple-touch-icon.png
+[debug] [2026-10-18T05:58:02.569Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.569Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/apple-touch-icon.png
+[debug] [2026-10-18T05:58:02.570Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2026-10-18T05:58:02.570Z] [unzip] Processing entry: client/android-chrome-512x512.png
+[debug] [2026-10-18T05:58:02.570Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.570Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/android-chrome-512x512.png
+[debug] [2026-10-18T05:58:02.571Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2026-10-18T05:58:02.571Z] [unzip] Processing entry: client/manifest.json
+[debug] [2026-10-18T05:58:02.571Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.571Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/manifest.json
+[debug] [2026-10-18T05:58:02.572Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2026-10-18T05:58:02.572Z] [unzip] Processing entry: client/robots.txt
+[debug] [2026-10-18T05:58:02.572Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.572Z] [unzip] Writing file: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/robots.txt
+[debug] [2026-10-18T05:58:02.572Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2026-10-18T05:58:02.572Z] [unzip] Processing entry: client/mstile-150x150.png
+[debug] [2026-10-18T05:58:02.572Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.573Z] [unzip] Writing file: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/mstile-150x150.png
+[debug] [2026-10-18T05:58:02.573Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-10-18T05:58:02.573Z] [unzip] Processing entry: client/assets/
+[debug] [2026-10-18T05:58:02.573Z] [unzip] mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/
+[debug] [2026-10-18T05:58:02.573Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2026-10-18T05:58:02.573Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js
+[debug] [2026-10-18T05:58:02.573Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2026-10-18T05:58:02.573Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js
+[debug] [2026-10-18T05:58:02.581Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2026-10-18T05:58:02.581Z] [unzip] Processing entry: client/assets/index-CjB9C900.css
+[debug] [2026-10-18T05:58:02.581Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2026-10-18T05:58:02.582Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-CjB9C900.css
+[debug] [2026-10-18T05:58:02.582Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2026-10-18T05:58:02.582Z] [unzip] Processing entry: client/assets/index-BX-A56oj.js.map
+[debug] [2026-10-18T05:58:02.582Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets
+[debug] [2026-10-18T05:58:02.582Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/index-BX-A56oj.js.map
+[debug] [2026-10-18T05:58:02.609Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-10-18T05:58:02.609Z] [unzip] Processing entry: client/assets/extensions/
+[debug] [2026-10-18T05:58:02.609Z] [unzip] mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/
+[debug] [2026-10-18T05:58:02.609Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2026-10-18T05:58:02.609Z] [unzip] Processing entry: client/assets/extensions/default-extension.png
+[debug] [2026-10-18T05:58:02.609Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions
+[debug] [2026-10-18T05:58:02.609Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/extensions/default-extension.png
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Processing entry: client/assets/img/
+[debug] [2026-10-18T05:58:02.610Z] [unzip] mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Processing entry: client/assets/img/database.png
+[debug] [2026-10-18T05:58:02.610Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/img
+[debug] [2026-10-18T05:58:02.610Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/img/database.png
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Processing entry: client/assets/provider-icons/
+[debug] [2026-10-18T05:58:02.610Z] [unzip] mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_saml.svg
+[debug] [2026-10-18T05:58:02.610Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.610Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_saml.svg
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2026-10-18T05:58:02.610Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_phone.svg
+[debug] [2026-10-18T05:58:02.610Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.611Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_phone.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.611Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_facebook.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.611Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_game_center.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_apple.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.611Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_apple.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_github.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.611Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_github.svg
+[debug] [2026-10-18T05:58:02.611Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.612Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_mslive.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.612Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_yahoo.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.612Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_twitter.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.612Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_play_games.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_email.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.612Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_email.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2026-10-18T05:58:02.612Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_google.svg
+[debug] [2026-10-18T05:58:02.612Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.612Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_google.svg
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Processing entry: client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2026-10-18T05:58:02.613Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons
+[debug] [2026-10-18T05:58:02.613Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/assets/provider-icons/auth_service_oidc.svg
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Processing entry: client/browserconfig.xml
+[debug] [2026-10-18T05:58:02.613Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.613Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/browserconfig.xml
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Processing entry: client/favicon-32x32.png
+[debug] [2026-10-18T05:58:02.613Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Writing file: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/client/favicon-32x32.png
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Processing entry: server/
+[debug] [2026-10-18T05:58:02.613Z] [unzip] mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/server/
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2026-10-18T05:58:02.613Z] [unzip] Processing entry: server/server.mjs.map
+[debug] [2026-10-18T05:58:02.613Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2026-10-18T05:58:02.613Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs.map
+[debug] [2026-10-18T05:58:02.615Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2026-10-18T05:58:02.615Z] [unzip] Processing entry: server/server.mjs
+[debug] [2026-10-18T05:58:02.615Z] [unzip] else mkdir: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/server
+[debug] [2026-10-18T05:58:02.615Z] [unzip] deflating: /Users/rajveer/.cache/firebase/emulators/ui-v1.15.0/server/server.mjs
+[debug] [2026-10-18T05:58:02.620Z] Could not find VSCode notification endpoint: TypeError: fetch failed. If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-10-18T06:06:53.804Z] Oct 18, 2026 11:36:53 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:36:53 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2026-10-18T06:06:53.872Z] Oct 18, 2026 11:36:53 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:36:53 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2026-10-18T06:07:02.238Z] Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2026-10-18T06:07:02.299Z] Oct 18, 2026 11:37:02 AM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError
+WARNING: Operation failed: 
+false for 'create' @ L47
+com.google.cloud.datastore.core.exception.DatastoreException: 
+false for 'create' @ L47
+	at com.google.cloud.datastore.core.exception.DatastoreException$Builder.build(DatastoreException.java:152)
+	at com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.verboseError(DefaultEmulatorRulesAuthorizer.java:349)
+	at com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.withVerboseErrors(DefaultEmulatorRulesAuthorizer.java:326)
+	at com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.checkCommit(DefaultEmulatorRulesAuthorizer.java:113)
+	at com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.commitHelper(FirestoreEmulatorHelper.java:407)
+	at com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.internalCommit(FirestoreEmulatorHelper.java:348)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:1336)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.createDocument(CloudFirestoreV1.java:454)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.createDocument(CloudFirestoreV1Router.java:145)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.lambda$createDocument$0(FirestoreV1GrpcAdapter.java:126)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter.unary(FirestoreV1GrpcAdapter.java:72)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.createDocument(FirestoreV1GrpcAdapter.java:126)
+	at com.google.firestore.v1.FirestoreGrpc$MethodHandlers.invoke(FirestoreGrpc.java:1436)
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:879)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError\nWARNING: Operation failed: \nfalse for 'create' @ L47\ncom.google.cloud.datastore.core.exception.DatastoreException: \nfalse for 'create' @ L47\n\tat com.google.cloud.datastore.core.exception.DatastoreException$Builder.build(DatastoreException.java:152)\n\tat com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.verboseError(DefaultEmulatorRulesAuthorizer.java:349)\n\tat com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.withVerboseErrors(DefaultEmulatorRulesAuthorizer.java:326)\n\tat com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.checkCommit(DefaultEmulatorRulesAuthorizer.java:113)\n\tat com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.commitHelper(FirestoreEmulatorHelper.java:407)\n\tat com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.internalCommit(FirestoreEmulatorHelper.java:348)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:1336)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.createDocument(CloudFirestoreV1.java:454)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.createDocument(CloudFirestoreV1Router.java:145)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.lambda$createDocument$0(FirestoreV1GrpcAdapter.java:126)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter.unary(FirestoreV1GrpcAdapter.java:72)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.createDocument(FirestoreV1GrpcAdapter.java:126)\n\tat com.google.firestore.v1.FirestoreGrpc$MethodHandlers.invoke(FirestoreGrpc.java:1436)\n\tat io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)\n\tat io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)\n\tat io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)\n\tat io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)\n\tat io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)\n\tat io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)\n\tat io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)\n\tat io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356)\n\tat io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:879)\n\tat io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)\n\tat io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)\n\tat java.base/java.lang.Thread.run(Thread.java:1516)\n\n"}}
+[debug] [2026-10-18T06:07:02.301Z] Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpHandler$1 onError
+INFO: Exception when handling request: PERMISSION_DENIED: 
+false for 'create' @ L47
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpHandler$1 onError\nINFO: Exception when handling request: PERMISSION_DENIED: \nfalse for 'create' @ L47\n"}}
+[debug] [2026-10-18T06:07:02.310Z] Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2026-10-18T06:07:02.318Z] Oct 18, 2026 11:37:02 AM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError
+WARNING: Operation failed: 
+false for 'create' @ L39
+com.google.cloud.datastore.core.exception.DatastoreException: 
+false for 'create' @ L39
+	at com.google.cloud.datastore.core.exception.DatastoreException$Builder.build(DatastoreException.java:152)
+	at com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.verboseError(DefaultEmulatorRulesAuthorizer.java:349)
+	at com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.withVerboseErrors(DefaultEmulatorRulesAuthorizer.java:326)
+	at com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.checkCommit(DefaultEmulatorRulesAuthorizer.java:113)
+	at com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.commitHelper(FirestoreEmulatorHelper.java:407)
+	at com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.internalCommit(FirestoreEmulatorHelper.java:348)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:1336)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.createDocument(CloudFirestoreV1.java:454)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.createDocument(CloudFirestoreV1Router.java:145)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.lambda$createDocument$0(FirestoreV1GrpcAdapter.java:126)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter.unary(FirestoreV1GrpcAdapter.java:72)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.createDocument(FirestoreV1GrpcAdapter.java:126)
+	at com.google.firestore.v1.FirestoreGrpc$MethodHandlers.invoke(FirestoreGrpc.java:1436)
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:879)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError\nWARNING: Operation failed: \nfalse for 'create' @ L39\ncom.google.cloud.datastore.core.exception.DatastoreException: \nfalse for 'create' @ L39\n\tat com.google.cloud.datastore.core.exception.DatastoreException$Builder.build(DatastoreException.java:152)\n\tat com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.verboseError(DefaultEmulatorRulesAuthorizer.java:349)\n\tat com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.withVerboseErrors(DefaultEmulatorRulesAuthorizer.java:326)\n\tat com.google.cloud.datastore.emulator.impl.rules.DefaultEmulatorRulesAuthorizer.checkCommit(DefaultEmulatorRulesAuthorizer.java:113)\n\tat com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.commitHelper(FirestoreEmulatorHelper.java:407)\n\tat com.google.cloud.datastore.emulator.impl.firestore.FirestoreEmulatorHelper.internalCommit(FirestoreEmulatorHelper.java:348)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.internalCommit(CloudFirestoreV1.java:1336)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1.createDocument(CloudFirestoreV1.java:454)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.createDocument(CloudFirestoreV1Router.java:145)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.lambda$createDocument$0(FirestoreV1GrpcAdapter.java:126)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter.unary(FirestoreV1GrpcAdapter.java:72)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.createDocument(FirestoreV1GrpcAdapter.java:126)\n\tat com.google.firestore.v1.FirestoreGrpc$MethodHandlers.invoke(FirestoreGrpc.java:1436)\n\tat io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)\n\tat io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)\n\tat io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)\n\tat io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)\n\tat io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)\n\tat io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)\n\tat io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)\n\tat io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356)\n\tat io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:879)\n\tat io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)\n\tat io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)\n\tat java.base/java.lang.Thread.run(Thread.java:1516)\n\n"}}
+[debug] [2026-10-18T06:07:02.319Z] Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpHandler$1 onError
+INFO: Exception when handling request: PERMISSION_DENIED: 
+false for 'create' @ L39
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpHandler$1 onError\nINFO: Exception when handling request: PERMISSION_DENIED: \nfalse for 'create' @ L39\n"}}
+[debug] [2026-10-18T06:07:02.328Z] Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2026-10-18T06:07:02.341Z] Oct 18, 2026 11:37:02 AM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError
+WARNING: Operation failed: Document parent name "projects/demo-project/databases/(default)/documents/products" lacks "/" at index 60.
+com.google.cloud.datastore.core.exception.InvalidConversionException: Document parent name "projects/demo-project/databases/(default)/documents/products" lacks "/" at index 60.
+	at com.google.cloud.datastore.core.exception.InvalidConversionException.checkConversion(InvalidConversionException.java:123)
+	at com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceNameParser.parseSlashAllowTrailing(FirestoreV1ResourceNameParser.java:133)
+	at com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceNameParser.parseSlash(FirestoreV1ResourceNameParser.java:128)
+	at com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceRefToRepConverter.parsePath(FirestoreV1ResourceRefToRepConverter.java:349)
+	at com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceRefToRepConverter.convertEntityParentRefAllowFirestoreRelative(FirestoreV1ResourceRefToRepConverter.java:94)
+	at com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1RequestToRepConverter.parseParent(FirestoreV1RequestToRepConverter.java:629)
+	at com.google.cloud.datastore.emulator.impl.util.FirestoreEmulatorConverters.parseParent(FirestoreEmulatorConverters.java:641)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.inferDatabaseRef(CloudFirestoreV1Router.java:517)
+	at com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.runQuery(CloudFirestoreV1Router.java:188)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.lambda$runQuery$0(FirestoreV1GrpcAdapter.java:178)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter.streaming(FirestoreV1GrpcAdapter.java:82)
+	at com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.runQuery(FirestoreV1GrpcAdapter.java:178)
+	at com.google.firestore.v1.FirestoreGrpc$MethodHandlers.invoke(FirestoreGrpc.java:1412)
+	at io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)
+	at io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)
+	at io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356)
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:879)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM com.google.cloud.datastore.emulator.impl.util.WrappedStreamObserver onError\nWARNING: Operation failed: Document parent name \"projects/demo-project/databases/(default)/documents/products\" lacks \"/\" at index 60.\ncom.google.cloud.datastore.core.exception.InvalidConversionException: Document parent name \"projects/demo-project/databases/(default)/documents/products\" lacks \"/\" at index 60.\n\tat com.google.cloud.datastore.core.exception.InvalidConversionException.checkConversion(InvalidConversionException.java:123)\n\tat com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceNameParser.parseSlashAllowTrailing(FirestoreV1ResourceNameParser.java:133)\n\tat com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceNameParser.parseSlash(FirestoreV1ResourceNameParser.java:128)\n\tat com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceRefToRepConverter.parsePath(FirestoreV1ResourceRefToRepConverter.java:349)\n\tat com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1ResourceRefToRepConverter.convertEntityParentRefAllowFirestoreRelative(FirestoreV1ResourceRefToRepConverter.java:94)\n\tat com.google.cloud.datastore.core.firestorev1.converter.FirestoreV1RequestToRepConverter.parseParent(FirestoreV1RequestToRepConverter.java:629)\n\tat com.google.cloud.datastore.emulator.impl.util.FirestoreEmulatorConverters.parseParent(FirestoreEmulatorConverters.java:641)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.inferDatabaseRef(CloudFirestoreV1Router.java:517)\n\tat com.google.cloud.datastore.emulator.impl.firestore.CloudFirestoreV1Router.runQuery(CloudFirestoreV1Router.java:188)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.lambda$runQuery$0(FirestoreV1GrpcAdapter.java:178)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter.streaming(FirestoreV1GrpcAdapter.java:82)\n\tat com.google.cloud.datastore.emulator.firestore.v1.FirestoreV1GrpcAdapter$1.runQuery(FirestoreV1GrpcAdapter.java:178)\n\tat com.google.firestore.v1.FirestoreGrpc$MethodHandlers.invoke(FirestoreGrpc.java:1412)\n\tat io.grpc.stub.ServerCalls$UnaryServerCallHandler$UnaryServerCallListener.onHalfClose(ServerCalls.java:182)\n\tat io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)\n\tat io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)\n\tat io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)\n\tat io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:35)\n\tat io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:23)\n\tat io.grpc.ForwardingServerCallListener$SimpleForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:40)\n\tat io.grpc.Contexts$ContextualizedServerCallListener.onHalfClose(Contexts.java:86)\n\tat io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:356)\n\tat io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$1HalfClosed.runInContext(ServerImpl.java:879)\n\tat io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)\n\tat io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)\n\tat java.base/java.lang.Thread.run(Thread.java:1516)\n\n"}}
+[debug] [2026-10-18T06:07:02.342Z] Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpHandler$1 onError
+INFO: Exception when handling request: INVALID_ARGUMENT: Document parent name "projects/demo-project/databases/(default)/documents/products" lacks "/" at index 60.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 18, 2026 11:37:02 AM io.gapi.emulators.netty.HttpHandler$1 onError\nINFO: Exception when handling request: INVALID_ARGUMENT: Document parent name \"projects/demo-project/databases/(default)/documents/products\" lacks \"/\" at index 60.\n"}}
