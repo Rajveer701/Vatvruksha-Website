@@ -6,22 +6,40 @@ import { ref, getDownloadURL } from 'firebase/storage'
 import { storage } from '../../firebase.js'
 import { STORAGE_IMAGE_PLACEHOLDER } from '../../../../shared/constants.js'
 
+const isExternalUrl = (value) => {
+  if (!value || typeof value !== 'string') return false
+  return /^https?:\/\//i.test(value) || value.startsWith('data:')
+}
+
 export default function Image({ src, className = '', alt = '', ...props }) {
   const [url, setUrl] = useState(STORAGE_IMAGE_PLACEHOLDER)
   const [failed, setFailed] = useState(false)
 
   useEffect(() => {
+    setFailed(false)
+
     if (!src) {
       setUrl(STORAGE_IMAGE_PLACEHOLDER)
       return
     }
-    const storageRef = ref(storage, src)
-    getDownloadURL(storageRef)
-      .then(setUrl)
-      .catch(() => {
-        // Bucket not configured or path missing — show placeholder.
-        setFailed(true)
-      })
+
+    if (isExternalUrl(src)) {
+      setUrl(src)
+      return
+    }
+
+    try {
+      const storageRef = ref(storage, src)
+      getDownloadURL(storageRef)
+        .then(setUrl)
+        .catch(() => {
+          setFailed(true)
+          setUrl(STORAGE_IMAGE_PLACEHOLDER)
+        })
+    } catch {
+      setFailed(true)
+      setUrl(STORAGE_IMAGE_PLACEHOLDER)
+    }
   }, [src])
 
   const finalSrc = failed || !url ? STORAGE_IMAGE_PLACEHOLDER : url
